@@ -68,7 +68,7 @@ p {
 /* TITLE IMAGE */
 #title .container-fluid {
   padding: 3% 15% 7%;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .title-image {
@@ -157,7 +157,7 @@ p {
 /* ========= MEDIA QUERY SECTION ========= */
 
 @media (max-width: 990px) {
-  #title {
+  #title .container-fluid {
     text-align: center;
   }
 
@@ -165,5 +165,11 @@ p {
     position: static;
     transform: rotate(0);
     width: 40%;
+  }
+}
+
+@media (min-width: 991) {
+  #title .container-fluid {
+    text-align: left;
   }
 }
